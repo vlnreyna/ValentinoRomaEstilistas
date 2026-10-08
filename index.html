@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluquería Valentino Roma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="cabecera">
+
+        <div class="contenedor">
+            <a href="#inicio" class="logo">Valentino Roma Estilistas</a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Trabajos</a></li>
+                    <li><a href="#equipo">Equipo</a></li>
+                    <li><a href="#opiniones">Opiniones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+
+                <a href="https://wa.me/34672352670?text=Hola,%20quiero%20reservar%20cita"
+                   target="_blank"
+                   class="boton">
+                    Reservar cita
+                </a>
+            </nav>
+
+            <!-- Botón que se puede utilizar en móvil -->
+            <button id="botonMenu">☰</button>
+
+        </div>
+    </header>
+
+    <main id="contenido">
+        <!-- INICIO -->
+        <section id="inicio" class="seccion inicio">
+            
+            <div class="carrusel">
+                <div class="diapositiva activa" style="background-image: url('img/carru1.jpeg');"></div>
+                <div class="diapositiva" style="background-image: url('img/carru2.jpeg');"></div>
+                <div class="diapositiva" style="background-image: url('img/carru3.jpeg');"></div>
+            </div>
+
+
+            <div class="contenedor">
+                <h1>VALENTINO ROMA ESTILISTAS</h1>
+                <p class="descripcion">
+                    Cortes, mechas, color y peinados con asesoramiento personalizado.
+                    Ambiente relajado y moderno.
+                </p>
+
+                <div class="botones">
+                    <a href="https://wa.me/34672352670?text=Hola,%20quiero%20reservar%20cita"
+                       target="_blank"
+                       class="boton">
+                        Reservar cita
+                    </a>
+                </div>
+
+                <p class="descripcion">Reserva online 24/7 con Treatwell · 5,0 ★ en 174 opiniones</p>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="seccion servicios">
+            <div class="contenedor">
+                <h2>Servicios y Precios</h2>
+                <p>Los precios son orientativos. Pueden variar dependiendo la longitud y el tipo de cabello.</p>
+                
+                <!-- Botones de filtro -->
+                <div id="filtros">
+                    <button class="filtro activo" data-filtro="todos">
+                        Todos
+                    </button>
+                    
+                    <button class="filtro" data-filtro="promocion">
+                        Promociones
+                    </button>
+
+                    <button class="filtro" data-filtro="corte">
+                        Cortes
+                    </button>
+                    
+                    <button class="filtro" data-filtro="peinado">
+                        Peinados
+                    </button>
+                    
+                    <button class="filtro" data-filtro="color">
+                        Color
+                    </button>
+                    
+                    <button class="filtro" data-filtro="mechas">
+                        Mechas
+                    </button>
+                    
+                    <button class="filtro" data-filtro="tratamiento">
+                        Tratamientos
+                    </button>
+
+                </div>
+
+                <!-- Lista de servicios -->
+                <div id="lista_servicios">
+
+                    <div class="servicio" data-categoria="promocion">
+                        <div>
+                            <h3>Corte y Peinado</h3>
+                            <p>1 h 30 minutos</p>
+                        </div>
+                        <span class="precio">Desde 45€</span>
+                    </div>
+
+                    <div class="servicio" data-categoria="corte">
+                        <div>
+                            <h3>Corte Mujer</h3>
+                            <p>30 minutos</p>
+                        </div>
+                        <span class="precio">Desde 25€</span>
+                    </div>
+
+                    <div class="servicio" data-categoria="peinado">
+                        <div>
+                            <h3>Peinado</h3>
+                            <p>1 h</p>
+                        </div>
+                        <span class="precio">Desde 24€</span>
+                    </div>
+
+                    <div class="servicio" data-categoria="peinado">
+                        <div>
+                            <h3>Peinado con Ondas</h3>
+                            <p>1 h</p>
+                        </div>
+                        <span class="precio">Desde 32,50€</span>
+                    </div>
+
+                    <div class="servicio" data-categoria="peinado">
+                        <div>
+                            <h3>Lavado y Secado</h3>
+                            <p>15 minutos</p>
+                        </div>
+                        <span class="precio">Desde 15€</span>
+                    </div>
+
+                    <div class="servicio" data-categoria="color">
+                        <div>
+                            <h3>Color Raíz</h3>
+                            <p>1 h</p>
+                        </div>
+                        <span class="precio">Desde 40€</span>
+                    </div>
+
+                    <div class="servicio" data-categoria="color">
+                        <div>
+                            <h3>Matices y Shine</h3>
+                            <p>1 h</p>
+                        </div>
+                        <span class="precio">Desde 68€</span>
+                    </div>
+
+
+                    <div class="servicio" data-categoria="mechas">
+                        <div>
+                            <h3>Balayage</h3>
+                            <p>3 h 15 minutos</p>
+                        </div>
+                        <span class="precio">Desde 148€</span>
+                    </div>
+
+                    <div class="servicio" data-categoria="mechas">
+                        <div>
+                            <h3>Mechas Clásicas</h3>
+                            <p>1 h 30 minutos</p>
+                        </div>
+                        <span class="precio">Desde 98€</span>
+                    </div>
+
+                    <div class="servicio" data-categoria="tratamiento">
+                        <div>
+                            <h3>Tratamiento Proyecto Pelo Saludable</h3>
+                            <p>30 minutos</p>
+                        </div>
+                        <span class="precio">Desde 60€</span>
+                    </div>
+
+                    <div class="servicio" data-categoria="tratamiento">
+                        <div>
+                            <h3>Bótox Capilar</h3>
+                            <p>1 h</p>
+                        </div>
+                        <span class="precio">Desde 65€</span>
+                    </div>
+
+                    <div class="servicio" data-categoria="tratamiento">
+                        <div>
+                            <h3>Medicina Ayurveda Plantas</h3>
+                            <p>30 minutos</p>
+                        </div>
+                        <span class="precio">Desde 60€</span>
+                    </div>
+                </div>
+                
+                 <div class="boton_centrado">
+                    <a href="https://wa.me/34672352670?text=Hola,%20quiero%20reservar%20cita"
+                       target="_blank"
+                       class="boton">
+                        Reservar cita
+                    </a>
+                </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section id="galeria" class="seccion galeria">
+            <div class="contenedor">
+                <h2>Nuestros trabajos</h2>
+                <p>Aquí puedes ver algunos de nuestros trabajos.</p>
+                
+                <!-- Galería de fotos -->
+                <div id="fotos">
+
+                    <div class="foto">
+                        <img src="img/trabajo1.jpg" alt="Trabajo 1">
+                    </div>
+
+                    <div class="foto">
+                        <img src="img/trabajo2.jpg" alt="Trabajo 2">
+                    </div>
+
+                    <div class="foto">
+                        <img src="img/trabajo3.jpeg" alt="Trabajo 3">
+                    </div>
+
+                    <div class="foto">
+                        <img src="img/trabajo4.jpeg" alt="Trabajo 4">
+                    </div>
+
+                    <div class="foto">
+                        <img src="img/carru3.jpeg" alt="Trabajo 5">
+                    </div>
+
+                    <div class="foto">
+                        <img src="img/trabajo6.jpeg" alt="Trabajo 6">
+                    </div>
+
+                </div>
+                
+                <div class="boton_centrado">
+                    <a href="https://www.instagram.com/valentino_roma_estilistas/"
+                        target="_blank"
+                        class="boton boton-secundario">
+                        Ver más en Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- EQUIPO -->
+        <section id="equipo" class="seccion equipo">
+            <div class="contenedor">
+                <h2>Conoce a nuestro equipo</h2>
+
+                <div id="miembros">
+                    <div class="miembro">
+                        <img src="img/foto.png" alt="Miembro 1">
+                        <h3>Carmen</h3>
+                        <p>Estilista · Especialista a cargo del salón</p>
+                    </div>
+                </div> 
+            </div>   
+        </section>
+
+        <!-- OPINIONES -->
+        <section id="opiniones" class="seccion opiniones">
+            <div class="contenedor">
+
+                <h2>Lo que dicen nuestros clientes</h2>
+
+                <div class="opiniones">
+                    <p class="puntuacion">5,0</p>
+                    <p class="estrellas">★★★★★</p>
+                    <p>174 opiniones verificadas en Treatwell</p>
+                    <p>
+                        Las clientas destacan el trato cercano,
+                        el asesoramiento y la rapidez al trabajar.
+                    </p>
+
+                    <a href="https://www.treatwell.es/establecimiento/valentino-roma-estilistas/"
+                    target="_blank"
+                    class="boton">
+                        Ver todas las opiniones
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE NOSOTROS -->
+        <section id="nosotros" class="seccion nosotros">
+            <div class="contenedor">
+                <div>
+                    <img src="img/pelu2.jpeg" alt="Interior del salón">
+                </div>
+
+                <div>
+                    <h2>Sobre nosotros</h2>
+
+                    <p>
+                        Valentino Roma Estilistas, ubicado en la Calle de López de Hoyos, 375, 
+                        en Madrid, es tu nuevo salón de referencia. Aquí podrás encontrar numerosas 
+                        opciones de tratamientos capilares, mechas, cortes y peinados. Además, ofrecen 
+                        servicio de depilación y maquillaje. Su equipo de expertos te espera para
+                        ayudarte a encontrar el tratamiento que necesitas.
+                    </p>
+
+                    <ul>
+                        <li>Productos profesionales: Redken, Truss y Milkshake</li>
+                        <li>Atención personalizada y asesoramiento</li>
+                        <li>Reserva online las 24 horas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="seccion contacto">
+            <div class="contenedor">
+                <h2>Contacto y ubicación</h2>
+                <div>
+                    <h3>Dirección</h3>
+                    <p>
+                        C. de López de Hoyos, 375, 28043 Madrid
+                    </p>
+
+                    <h3>¿Cómo llegar?</h3>
+                    <p>
+                        A unos 10 minutos a pie del metro Hortaleza.
+                    </p>
+
+                    <h3>Instagram</h3>
+                    <p>
+                        <a href="https://www.instagram.com/valentino_roma_estilistas/"
+                            target="_blank">
+                            @valentino_roma_estilistas
+                        </a>
+                    </p>
+
+                    <h3>Horario</h3>
+
+                    <table>
+                        <tr>
+                            <td>Lunes</td>
+                            <td>10:00 - 15:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Martes - Viernes</td>
+                            <td>10:00 - 19:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sábado</td>
+                            <td>09:00 - 14:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Domingo</td>
+                            <td>Cerrado</td>
+                        </tr>
+                    </table>
+
+
+                    <a href="https://wa.me/34672352670?text=Hola,%20quiero%20reservar%20cita"
+                        target="_blank"
+                        class="boton">
+                        Reservar cita
+                    </a>
+
+                </div>
+
+
+                <div class="mapa">
+
+                    <iframe
+                        title="Ubicación de Valentino Roma Estilistas"
+                        src="https://www.google.com/maps?q=40.4717979,-3.6505224&z=17&output=embed"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="pie">
+
+        <div class="contenedor">
+
+            <p>
+                © <span id="año"></span>
+                Valentino Roma Estilistas.
+                Todos los derechos reservados.
+            </p>
+
+            <!--
+            <ul>
+                <li><a href="#">Aviso legal</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li>
+                    <a href="https://www.instagram.com/valentino_roma_estilistas/"
+                       target="_blank">
+                        Instagram
+                    </a>
+                </li>
+            </ul>
+            -->
+        </div>
+
+    </footer>
+
+
+    <!-- BOTÓN DE RESERVA AHORA EN MÓVIL -->
+    <a id="botonReservaMovil"
+       href="https://wa.me/34672352670?text=Hola,%20quiero%20reservar%20cita"
+       target="_blank">
+        Reservar cita
+    </a>
+
+    <a class="whatsapp-flotante"
+        href="https://wa.me/34672352670?text=Hola,%20quiero%20reservar%20cita"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Reservar cita por WhatsApp">
+        <img src="img/whatsapp.png" alt="Reservar cita por WhatsApp" width="68" height="68">
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
